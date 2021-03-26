@@ -94,6 +94,11 @@ class ServiceNowAdapter extends EventEmitter {
  *   that handles the response.
  */
 healthcheck(callback) {
+
+    let callbackData = null;
+    let callbackError = null;
+
+    
  this.getRecord((result, error) => {
    /**
     * For this lab, complete the if else conditional
@@ -134,6 +139,7 @@ healthcheck(callback) {
    }
  });
 }
+
 
   /**
    * @memberof ServiceNowAdapter
